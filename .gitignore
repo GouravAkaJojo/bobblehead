@@ -1,0 +1,10 @@
+node_modules
+dist
+.venv
+characters/*/raw
+characters/*/source.jpg
+.env
+*.rejected
+__pycache__/
+*.pyc
+.DS_Store
