@@ -6,6 +6,7 @@ const page: React.CSSProperties = {
   minHeight: '100vh',
   margin: 0,
   display: 'grid',
+  gridTemplateColumns: 'minmax(0, 1fr)',
   placeItems: 'center',
   gap: 28,
   background: '#f6f4ef',
@@ -16,7 +17,15 @@ const page: React.CSSProperties = {
 export function App() {
   return (
     <div style={page}>
-      <div style={{ display: 'grid', placeItems: 'center', gap: 14 }}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'minmax(0, 1fr)',
+          placeItems: 'center',
+          gap: 14,
+          width: 'min(480px, 100%)',
+        }}
+      >
         <Mascot
           directions={`/mascots/${NAME}-directions.webp`}
           reactions={`/mascots/${NAME}-reactions.webp`}
@@ -31,7 +40,7 @@ export function App() {
             justifyContent: 'center',
             gap: 10,
             fontSize: 13,
-            maxWidth: 480,
+            width: '100%',
           }}
         >
           {[
@@ -68,7 +77,16 @@ export function App() {
         </p>
       </div>
 
-      <div style={{ display: 'flex', gap: 40, alignItems: 'flex-end' }}>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: 40,
+          alignItems: 'flex-end',
+          width: 'min(480px, 100%)',
+        }}
+      >
         {[72, 110, 160].map((s) => (
           <Mascot
             key={s}
