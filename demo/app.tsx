@@ -24,8 +24,30 @@ export function App() {
           size={200}
           label={NAME}
         />
-        <div style={{ display: 'flex', gap: 10, fontSize: 13 }}>
-          {['Cola', 'jojo'].map((n) => (
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: 10,
+            fontSize: 13,
+            maxWidth: 480,
+          }}
+        >
+          {[
+            'Cola',
+            'jojo',
+            'alien',
+            'dragon',
+            'frog',
+            'otter',
+            'owl',
+            'penguin',
+            'raccoon',
+            'robot',
+            'tiger',
+            'tv',
+          ].map((n) => (
             <a
               key={n}
               href={`?c=${n}`}
