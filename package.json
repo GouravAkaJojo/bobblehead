@@ -1,6 +1,6 @@
 {
   "name": "bobblehead",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A character for the top of your page that watches the cursor and reacts when you poke it.",
   "type": "module",
   "main": "./dist/index.js",
