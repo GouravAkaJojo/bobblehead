@@ -5,6 +5,9 @@ A character for the top of your page that watches the cursor and reacts when you
 **16 head directions** instead of nine, a spring that keeps it moving between them, idle
 breathing, and blinking that works in whatever direction it is already facing.
 
+**[Docs and a playground](https://www.thakurgourav.in/bobblehead)** — poke one, drag the
+sixteen sectors around a dial, and read the sheet layout cell by cell.
+
 Reverse-engineered from [nilbuild/page-mascot](https://github.com/nilbuild/page-mascot),
 whose art pipeline this builds on. The runtime is rewritten.
 
@@ -91,6 +94,9 @@ cell = round(atan2(dy, dx) / (2 * PI / 16)) mod 16
 
 **Expressions** are a 3x3 sheet of nine, in the order `blink, heart, sparkle, surprised,
 wink, bashful, sleepy, dizzy, delighted`.
+
+Every cell of all three sheets is laid out and numbered at
+[thakurgourav.in/bobblehead#sheets](https://www.thakurgourav.in/bobblehead#sheets).
 
 ## Making your own character
 

@@ -5,19 +5,38 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "files": ["dist"],
-  "keywords": ["react", "mascot", "cursor", "character", "sprite", "animation"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "mascot",
+    "cursor",
+    "character",
+    "sprite",
+    "animation"
+  ],
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/GouravAkaJojo/bobblehead.git" },
-  "homepage": "https://github.com/GouravAkaJojo/bobblehead#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GouravAkaJojo/bobblehead.git"
+  },
+  "homepage": "https://www.thakurgourav.in/bobblehead",
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.build.json",
     "demo": "vite build",
     "check": "tsc --noEmit"
   },
-  "peerDependencies": { "react": ">=18" },
+  "peerDependencies": {
+    "react": ">=18"
+  },
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
